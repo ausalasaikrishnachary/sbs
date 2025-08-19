@@ -51,7 +51,7 @@ function App() {
     <Router>
       <div>
         <Routes>
-          {/* <Route path="/" element={<Dashboard />} /> */}
+          <Route path="/" element={<Dashboard />} />
           {/* <Route path="/customer" element={<Customers />} /> */}
           <Route path="/view-customers" element={<ViewCustomers />} />
           <Route path="/view-suppliers" element={<ViewSuppliers />} />
@@ -73,12 +73,14 @@ function App() {
           <Route path="/ageing" element={<Ageing />} />
           <Route path="/overdue" element={<OverdueReceivables />} />
           <Route path="/partyWise" element={<PartyWiseReceivables />} />
+
           <Route path="/upcoming" element={<UpcomingReveivables />} />
           <Route path="/purchased-items" element={<PurchasedItems />} />
-          <Route path="/" element={<SalesItems />} />
+          <Route path="/sales-items" element={<SalesItems />} />
+
           <Route path="/product-details/:id" element={<ProductDetails />} />
 
-
+          // Purchase
 
 
           <Route path="/debitNote" element={<DebitNote />} />
