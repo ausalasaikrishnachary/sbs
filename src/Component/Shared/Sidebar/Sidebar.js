@@ -80,7 +80,7 @@ const Sidebar = ({ user, collapsed, activePage }) => {
       <div className="navbar-wrapper">
         <div className="navbar-content scroll-div">
           <ul className="nav pcoded-inner-navbar">
-            <li className={`nav-item ${isActive('/') ? 'active' : ''}`}>
+            {/* <li className={`nav-item ${isActive('/') ? 'active' : ''}`}>
               <Link to="/" className="nav-link">
                 <span className="pcoded-micon"><FiHome /></span>
                 <span className="pcoded-mtext">Dashboard</span>
@@ -110,7 +110,7 @@ const Sidebar = ({ user, collapsed, activePage }) => {
                   <Link to="/view-suppliers">Suppliers</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             <li className={`nav-item pcoded-hasmenu ${activeMenu === 'inventory' ? 'pcoded-trigger' : ''}`}>
               <a href="#!" className="nav-link" onClick={(e) => {
@@ -132,7 +132,7 @@ const Sidebar = ({ user, collapsed, activePage }) => {
               </ul>
             </li>
 
-            <li className={`nav-item pcoded-hasmenu ${activeMenu === 'sales' ? 'pcoded-trigger' : ''}`}>
+            {/* <li className={`nav-item pcoded-hasmenu ${activeMenu === 'sales' ? 'pcoded-trigger' : ''}`}>
               <a href="#!" className="nav-link" onClick={(e) => {
                 e.preventDefault();
                 toggleMenu('sales');
@@ -279,7 +279,7 @@ const Sidebar = ({ user, collapsed, activePage }) => {
                   <Link to="/merge-sellers">Merge Sellers</Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

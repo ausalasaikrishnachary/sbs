@@ -51,48 +51,46 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          {/* <Route path="/" element={<Dashboard />} /> */}
           {/* <Route path="/customer" element={<Customers />} /> */}
           <Route path="/view-customers" element={<ViewCustomers />} />
           <Route path="/view-suppliers" element={<ViewSuppliers />} />
           <Route path="/add-customer" element={<AddCustomer />} />
-           <Route path="/add-customer/:id" element={<AddCustomer />} />
+          <Route path="/add-customer/:id" element={<AddCustomer />} />
           <Route path="/customer-details" element={<ViewCustomerDetails />} />
           <Route path="/supplier-details" element={<ViewSupplierDetails />} />
           <Route path="/add-supplier" element={<AddSupplier />} />
-           <Route path="/add-supplier/:id" element={<AddSupplier />} />
+          <Route path="/add-supplier/:id" element={<AddSupplier />} />
           <Route path="/quotations" element={<Quotations />} />
           <Route path="/receipts" element={<Receipts />} />
           <Route path="/billOfSupply" element={<BillOfSupply />} />
           <Route path="/creditNote" element={<CreditNote />} />
           <Route path="/deliveryChallan" element={<DeliveryChallan />} />
-           <Route path="/receivables" element={<Receivables />} />
+          <Route path="/receivables" element={<Receivables />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/createinvoice" element={<CreateInvoice />} />
           <Route path="/Sales" element={<Sales />} />
           <Route path="/ageing" element={<Ageing />} />
           <Route path="/overdue" element={<OverdueReceivables />} />
           <Route path="/partyWise" element={<PartyWiseReceivables />} />
-      
           <Route path="/upcoming" element={<UpcomingReveivables />} />
-           <Route path="/purchased-items" element={<PurchasedItems />} />
-            <Route path="/sales-items" element={<SalesItems />} />
-            
-            <Route path="/product-details/:id" element={<ProductDetails />} />
-
-          // Purchase
+          <Route path="/purchased-items" element={<PurchasedItems />} />
+          <Route path="/" element={<SalesItems />} />
+          <Route path="/product-details/:id" element={<ProductDetails />} />
 
 
-     <Route path="/debitNote" element={<DebitNote />} />
+
+
+          <Route path="/debitNote" element={<DebitNote />} />
           <Route path="/payables" element={<Payable />} />
-           <Route path="/purchaseInvoice" element={<PurchaseInvoice />} />
-            <Route path="/purchaseOrder" element={<PurchaseOrder />} />
-            <Route path="/voucher" element={<Voucher />} />
+          <Route path="/purchaseInvoice" element={<PurchaseInvoice />} />
+          <Route path="/purchaseOrder" element={<PurchaseOrder />} />
+          <Route path="/voucher" element={<Voucher />} />
 
-                <Route path="/puchaseAgeing" element={<PuchaseAgeing />} />
-           <Route path="/overduePayables" element={<OverduePayables />} />
-            <Route path="/partyWisePayables" element={<PartyWisePayables />} />
-            <Route path="/upcomingPayables" element={<UpcomingPayables />} />
+          <Route path="/puchaseAgeing" element={<PuchaseAgeing />} />
+          <Route path="/overduePayables" element={<OverduePayables />} />
+          <Route path="/partyWisePayables" element={<PartyWisePayables />} />
+          <Route path="/upcomingPayables" element={<UpcomingPayables />} />
 
 
         </Routes>
